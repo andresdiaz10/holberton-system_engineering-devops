@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type d -iname ".*" -print | wc -l
+find -name "*" -type d  | wc -l
