@@ -1,6 +1,2 @@
-#!/bin/bash
-if  test -f ls_cwd_content; then 
-echo $(ls -la) > ls_cwd_content
-else
-echo $(ls -la) >> ls_cwd_content
-fi
+#!/bin/bash 
+ls -la > ls_cwd_content
