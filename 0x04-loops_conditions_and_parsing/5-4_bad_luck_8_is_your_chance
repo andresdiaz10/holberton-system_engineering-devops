@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Print a string 10 times
+
+index=0
+
+while [ $index -lt 10 ]
+do
+ if [ $index -eq 7 ]
+ then
+   echo "good luck"
+ elif [ $index -eq 3 ]
+ then
+   echo "bad luck"
+ else
+   echo "Best School"
+ fi
+ (( index++ ))
+done

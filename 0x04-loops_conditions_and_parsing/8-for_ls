@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Print the list of the current directory
+
+list=$(ls)
+
+for index in $list; do
+  echo "$index" | cut -d '-' -f2
+done
