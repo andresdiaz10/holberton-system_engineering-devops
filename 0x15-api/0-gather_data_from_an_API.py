@@ -9,10 +9,10 @@ if __name__ == "__main__":
     request = "{}users/{}".format(url, argv[1])
     response_json = requests.get(request).json()
     name = response_json.get("name")
-    task_response = requests.get("{}todos?userId={}".format(url, argv[1])).json()
-    num_task = len(task_response)
+    task_res = requests.get("{}todos?userId={}".format(url, argv[1])).json()
+    num_task = len(task_res)
     completed_tasks = requests.get("{}todos?userId={}&&completed=true"
-                                  .format(url, argv[1])).json()
+                                   .format(url, argv[1])).json()
     num_completed_task = len(completed_tasks)
 
     print("Employee {} is done with tasks({}/{}):"
